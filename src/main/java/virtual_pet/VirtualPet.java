@@ -19,10 +19,10 @@ public class VirtualPet {
     }
 
             public void greeting() {
-            System.out.println("My name is " + name + "! My hunger level is:  "
-                    + hunger + " this is how thirsty I am: " +
-                     + thirst + " my current mood is: "
-                    + boredom + " Please take care of me!");
+            System.out.println("Hi my name is " + name + "! My hunger level is: "
+                    + hunger + ". My thirst level is: " +
+                     + thirst + ". My current mood is: "
+                    + boredom + ". Please take care of me!");
         }
 
             public String getName(){
