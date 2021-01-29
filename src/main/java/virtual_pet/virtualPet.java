@@ -45,5 +45,10 @@ public class virtualPet {
     }
 
 
+
+    public void eat() {
+        hungerLevel = hungerLevel -5;
+//   same thing     hunger -= 5;
+    }
 }
 
