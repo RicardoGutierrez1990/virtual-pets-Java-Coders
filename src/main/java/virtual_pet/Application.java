@@ -8,7 +8,11 @@ public class Application {
 
     public static void main(String[] args) {
 
+    Robotic sampleRobotic = new RoboDog("Fido","Black",5);
 
+    sampleRobotic.play();
+    sampleRobotic.maintenance();
+    sampleRobotic.makeNoise();
 
 
     }

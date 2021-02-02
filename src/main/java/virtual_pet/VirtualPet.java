@@ -12,6 +12,7 @@ public abstract class VirtualPet {
         this.name = name;
         this.color = color;
         this.age = age;
+        this.isAlive = true;
 
     }
 
