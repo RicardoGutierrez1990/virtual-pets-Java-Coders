@@ -1,7 +1,7 @@
 package virtual_pet;
 
 
-public class virtualPet {
+public class VirtualPet {
 
     private String name;
     private int thirstLevel;
@@ -9,7 +9,7 @@ public class virtualPet {
     private int boredomLevel;
 
 
-    public virtualPet(String name, int thirstLevel, int hungerLevel, int boredomLevel){
+    public VirtualPet(String name, int thirstLevel, int hungerLevel, int boredomLevel){
 
         this.name = name;
         this.thirstLevel = thirstLevel;
@@ -32,15 +32,15 @@ public class virtualPet {
         return name;
     }
 
-    public int thirstLevel() {
+    public int getThirstLevel() {
         return thirstLevel;
     }
 
-    public int hungerLevel() {
+    public int getHungerLevel() {
         return hungerLevel;
     }
 
-    public int boredomLevel() {
+    public int getBoredomLevel() {
         return boredomLevel;
     }
 

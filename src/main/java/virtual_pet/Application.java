@@ -13,7 +13,7 @@ public class Application {
         String petName = inputScanner.nextLine();
 
 
-        virtualPet Pet = new virtualPet(petName, 10, 10, 10);
+        VirtualPet Pet = new VirtualPet(petName, 10, 10, 10);
         Pet.greeting();
 
     }
