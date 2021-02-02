@@ -1,54 +1,134 @@
 package virtual_pet;
 
 
-public class VirtualPet {
+public abstract class VirtualPet {
 
-    private String name;
-    private int thirstLevel;
-    private int energyLevel;
-    private int boredomLevel;
+    protected String name;
+    private String color;
+    private boolean isAlive;
+    private int age;
 
-
-    public VirtualPet(String name, int thirstLevel, int energyLevel, int boredomLevel){
-
+    public VirtualPet(String name, String color, int age) {
         this.name = name;
-        this.thirstLevel = thirstLevel;
-        this.energyLevel = energyLevel;
-        this.boredomLevel = boredomLevel;
+        this.color = color;
+        this.age = age;
 
     }
 
-    public void greeting() {
-        System.out.println("Hi my name is " + name + ". Here are my current stats:\n"
-                +"\n"
-                +"Thirst Level:     |" + thirstLevel + "|\n"
-                + "Hunger Level:     |" + energyLevel + "|\n"
-                + "Boredom Level:    |" + boredomLevel + "|\n"
-                +"\n"
-                + "Please take care of me!");
+    public void play() {
+        System.out.println(name + " plays with owner");
     }
 
-    public String getName(){
+    public abstract void makeNoise();
+
+    public void rest() {
+        System.out.println(name + " is resting.");
+    }
+
+    public void die() {
+        System.out.println(name + "is no longer with us :(");
+    }
+
+    public String getName() {
         return name;
     }
 
-    public int getThirstLevel() {
-        return thirstLevel;
+    public String getColor() {
+        return color;
     }
 
-    public int getEnergyLevel() {
-        return energyLevel;
+    public boolean isAlive() {
+        return isAlive;
     }
 
-    public int getBoredomLevel() {
-        return boredomLevel;
+    public int getAge() {
+        return age;
     }
 
 
-
-    public void eat() {
-        energyLevel = energyLevel -5;
-//   same thing     hunger -= 5;
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    private int thirstLevel;
+//    private int energyLevel;
+//    private int boredomLevel;
+//
+//
+//    public VirtualPet(String name, int thirstLevel, int energyLevel, int boredomLevel){
+//
+//        this.name = name;
+//        this.thirstLevel = thirstLevel;
+//        this.energyLevel = energyLevel;
+//        this.boredomLevel = boredomLevel;
+//
+//    }
+//
+//    public void greeting() {
+//        System.out.println("Hi my name is " + name + ". Here are my current stats:\n"
+//                +"\n"
+//                +"Thirst Level:     |" + thirstLevel + "|\n"
+//                + "Hunger Level:     |" + energyLevel + "|\n"
+//                + "Boredom Level:    |" + boredomLevel + "|\n"
+//                +"\n"
+//                + "Please take care of me!");
+//    }
+//
+//    public String getName(){
+//        return name;
+//    }
+//
+//    public int getThirstLevel() {
+//        return thirstLevel;
+//    }
+//
+//    public int getEnergyLevel() {
+//        return energyLevel;
+//    }
+//
+//    public int getBoredomLevel() {
+//        return boredomLevel;
+//    }
+//
+//
+//
+//    public void eat() {
+//        energyLevel = energyLevel -5;
+////   same thing     hunger -= 5;
+//    }
+
 
