@@ -2,10 +2,15 @@ package virtual_pet;
 
 public abstract class Robotic extends VirtualPet {
 
+    private int energyLevel;
+    private int oilLevel;
+    private int boredomLevel;
 
-
-    public Robotic(String name, String color, int age) {
+    public Robotic(String name, String color, int age, int energyLevel, int oilLevel, int boredomLevel) {
         super(name, color, age);
+        this.energyLevel = energyLevel;
+        this.oilLevel = oilLevel;
+        this.boredomLevel = boredomLevel;
     }
 
 
