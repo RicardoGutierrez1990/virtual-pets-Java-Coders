@@ -8,47 +8,74 @@ public class Application {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        String playersPetOption;
 
-
-
-
-        System.out.println("\nWelcome to Virtual Pet!");
-        System.out.println("Please pick a name for your pet: ");
+        System.out.println("\nHello and welcome to Virtual Pet!");
+        System.out.println("Please pick a name for your future pet: ");
         Scanner inputScanner = new Scanner(System.in);
         String petName = inputScanner.nextLine();
 
 
-//        VirtualPet newRoboDog = new RoboDog(petName,3);
-//        ((RoboDog) newRoboDog).greeting();
-
-
-        System.out.println();
-        System.out.println("Hello! my name is " + petName + "."+"\nBefore we continue, let's go over some options to find out what type of pet would you like me to be.\n");
+        System.out.println("\nBefore we continue, let's go over some options to find out what type of pet would you like me to be.\n");
         System.out.println("Please select one of our five options:\n");
         System.out.println("Press 1 for a Robotic Dog.");
         System.out.println("Press 2 for a Robotic Cat.");
         System.out.println("Press 3 for an Organic Dog.");
-        System.out.println("Press 4 for an Organic Cat.\n");
-        System.out.println("Press 5 to exit the game.");
+        System.out.println("Press 4 for an Organic Cat.");
+        System.out.println("Press 5 to exit the game.\n");
+
+        Scanner input = new Scanner(System.in);
+        String playersPetOption;
         playersPetOption = input.nextLine();
 
+        RoboDog newRoboDog = new RoboDog(petName,"Silver",5,10,10,10);
+        RoboCat newRoboCat = new RoboCat(petName, "Blue",1,10,10,10);
+        OrganicDog newOrgDog = new OrganicDog(petName,"Black and Brown",7,10,10,10);
+        OrganicCat newOrgCat = new OrganicCat(petName, "Orange",18,10,10,10);
 
 
 
-//        String [] myPets = {"RoboDog"}
-//        switch(playersPetOption){
-//            case "1": {
-//                RoboDog.greeting();
-//                break;
-//            }
-//
-//        default: {
-//                System.out.println("This is not a valid option, Please try Again");
-//            }
-//        }
 
+        switch(playersPetOption){
+            case "1": {
+            newRoboDog.greeting();
+            newRoboDog.makeNoise();
+                break;
+            }
+
+            case "2": {
+             newRoboCat.greeting();
+             newRoboCat.makeNoise();
+             break;
+            }
+
+            case "3": {
+             newOrgDog.greeting();
+             newOrgDog.makeNoise();
+             break;
+            }
+
+            case "4": {
+             newOrgCat.greeting();
+             newOrgCat.makeNoise();
+             break;
+            }
+
+            case "5": {
+                System.out.println("GAME OVER. See you next time!");
+                break;
+            }
+
+            default: {
+                System.out.println("This is not a valid option, Please try Again");
+            }
+        }
+
+    }
+}
+
+
+
+            //        String [] myPets = {"RoboDog"}
 
 //        VirtualPet newRoboDog = new RoboDog(petName,3);
 //        ((RoboDog) newRoboDog).greeting();
@@ -67,12 +94,6 @@ public class Application {
 
 
 
-
-
-
-
-    }
-}
 
 
 
@@ -115,4 +136,6 @@ public class Application {
 //
 //    }
 //}
+
+// System.out.println("This is not a valid option. Please try again.");
 

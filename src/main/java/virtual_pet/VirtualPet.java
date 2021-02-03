@@ -16,6 +16,8 @@ public abstract class VirtualPet {
 
     }
 
+    public abstract void greeting();
+
     public void play() {
         System.out.println(name + " plays with owner");
     }
