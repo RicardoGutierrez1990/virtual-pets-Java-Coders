@@ -78,7 +78,7 @@ public class VirtualPetShelterApp {
                 System.out.println("\nGood call! " + petName + " will be excited to spend some time with you playing!.\n");
 
             } else if (numberInput.equals("6")) {
-
+                pets.cleanAllWaste();
                 System.out.println("\nSWEEPING...\n" +
                         "PICKING UP POOP...\n" +
                         "HOSING DOWN AND WASHING FLOORS... \n" +
@@ -110,12 +110,7 @@ public class VirtualPetShelterApp {
                 System.out.println("Thanks for leaving your pet with us! It will receive all the love and attention it needs.\n");
 
 
-//                    System.out.println("You found another circus pet in the alley behind the shelter.");
-//                    System.out.println(
-//                            "It tries to get away, but you manage to corner it! What would you like to name this pet?");
-//                    String nameChoice = input.nextLine();
-//                    System.out.println("What kind of behavior do they show?");
-//                    String descriptionChoice = input.nextLine();
+
                 System.out.println("What kind of pet is it? 1)Organic Dog  2)Organic Cat  3)Robot Dog  4)Robot Cat?");
                 System.out.println("Use the number to select your answer:");
                 petChoice = input.nextLine();

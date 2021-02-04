@@ -21,59 +21,70 @@ public abstract class VirtualPet {
         this.thirst = thirst;
         this.boredom = boredom;
         this.health = health;
+        this.waste = waste;
     }
 
     public String getName() {
+
         return name;
     }
 
     public String getStory() {
+
         return story;
     }
 
     public int getHunger() {
+
         return hunger;
     }
 
     public int getThirst() {
+
         return thirst;
     }
 
     public int getWaste() {
+
         return waste;
     }
 
     public int getBoredom() {
+
         return boredom;
     }
 
     public int getHealth() {
+
         return health;
     }
 
+
+
+    public void cleanWaste(){
+        this.waste -= 5;
+    }
+
+
     public void feedPet() {
-        this.hunger += 5;
+        this.hunger -= 5;
         this.thirst += 4;
     }
 
 
 
     public void giveWater() {
+
         this.thirst -= 4;
     }
 
-    public void napTime1() {
-        this.boredom += 3;
-        this.health += 3;
-    }
 
     public void goPlay() {
-        this.boredom += 5;
+        this.boredom -= 2;
         this.health += 8;
-        this.waste += 3;
-        this.hunger += (Math.random() * 3 + 1);
+        this.hunger += 5;
+        this.thirst +=3;
     }
-
 
 
     public void tick() {

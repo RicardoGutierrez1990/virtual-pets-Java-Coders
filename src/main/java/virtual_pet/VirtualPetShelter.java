@@ -29,6 +29,12 @@ public class VirtualPetShelter {
         pets.put(newName, virtualPet1);
     }
 
+    public void cleanAllWaste(){
+        for (VirtualPet pet : pets.values()){
+            pet.cleanWaste();
+        }
+    }
+
     public void feedAllPets() {
         for (VirtualPet pet : pets.values()) {
             pet.feedPet();
