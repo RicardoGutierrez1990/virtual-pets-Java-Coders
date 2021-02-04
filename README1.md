@@ -27,11 +27,14 @@ Players are responsible for cleaning cages
 Project SetUp:
 
 Virtual pet shelter class:
+Create a shelter to have all the adopted robotic or organic pets.
 
 Virtual pet application:
+Have a main class where all the objects will interact and have it runnable to the player.
 
 virtual pet class:
-
+Create different classes for Organic pets and Robotic cats.
 
 How to play the game:
-to play the game make sure you follow the prompt, it is that easy!
+To play the game make sure you follow the prompt, it is that easy!
+Enjoy!
