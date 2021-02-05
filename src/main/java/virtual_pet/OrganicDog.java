@@ -9,7 +9,10 @@ public class OrganicDog extends Organic{
         super(name, story, hunger, thirst, waste, boredom, health);
     }
 
+    public static void makeNoise(){
 
+        System.out.println("BARK! BARK!");
+    }
 
 }
 

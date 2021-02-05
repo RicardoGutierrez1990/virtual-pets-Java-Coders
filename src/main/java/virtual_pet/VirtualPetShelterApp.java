@@ -118,23 +118,26 @@ public class VirtualPetShelterApp {
                 switch (petChoice) {
                     case "1": {
                         pets.add(new OrganicDog(newPetName, newPetStory));
-                        System.out.println("\nHi my name is " + newPetName + " I'm an Organic Dog and I am happy to be in this new shelter! BARK! BARK!");
+                        System.out.println("\nHi my name is " + newPetName + " I'm an Organic Dog and I am happy to be in this new shelter!");
+                        OrganicDog.makeNoise();
                         break;
                     }
                     case "2": {
                         pets.add(new OrganicCat(newPetName, newPetStory));
                         System.out.println("\nHi my name is " + newPetName + " I love to chase mice and play with my owners, I'm not your typical cat!");
+                        OrganicCat.makeNoise();
                         break;
                     }
                     case "3": {
                         pets.add(new RoboticDog(newPetName, newPetStory));
                         System.out.println("\nHi my name is " + newPetName + " I'm a Robot Dog. I hate when it rains for it messes with my good looks!");
-
+                        RoboticDog.makeNoise();
                         break;
                     }
                     case "4": {
                         pets.add(new RoboticCat(newPetName, newPetStory));
                         System.out.println("\nHi my name is " + newPetName + ". " + "I'm a Robotic Cat and can't wait to play with you!");
+                        RoboticCat.makeNoise();
                         break;
                     }
                     default: {
@@ -156,7 +159,7 @@ public class VirtualPetShelterApp {
                 } else {
                     decision.equalsIgnoreCase("No");
                     System.out.println("Glad you are still with us.");
-                    System.out.println("Thank you for being a friend... Traveled down a road and back again... Your heart is true, you're a pal and a confidant.\n");
+                    System.out.println("Thank you for staying in the shelter with us a little longer!\n");
                 }
 
             }

@@ -10,6 +10,9 @@ public class OrganicCat extends Organic{
     }
 
 
+    public static void makeNoise(){
+        System.out.println("MEOW! MEOW!");
+    }
 }
 
 

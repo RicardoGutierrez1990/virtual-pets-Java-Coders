@@ -9,5 +9,10 @@ public class RoboticDog extends Robotic {
         super(name, story, hunger, thirst, waste, boredom, health);
     }
 
+    public static void makeNoise(){
+
+        System.out.println("ROBO-BARK! ROBO-BARK!");
+    }
+
 
 }
