@@ -107,9 +107,6 @@ public class VirtualPetShelterApp {
                 String newPetStory = input.nextLine();
 
 
-                System.out.println("Thanks for leaving your pet with us! It will receive all the love and attention it needs.\n");
-
-
 
                 System.out.println("What kind of pet is it? " +
                         "\n1)Organic Dog  " +
@@ -126,6 +123,7 @@ public class VirtualPetShelterApp {
                     }
                     case "2": {
                         pets.add(new OrganicCat(newPetName, newPetStory));
+                        System.out.println("\nHi my name is " + newPetName + " I love to chase mice and play with my owners, I'm not your typical cat!");
                         break;
                     }
                     case "3": {
@@ -139,7 +137,9 @@ public class VirtualPetShelterApp {
                     default: {
                         System.out.println("Wrong input, please try again!");
                     }
+
                 }
+                System.out.println("\nThanks for leaving your pet with us! It will receive all the love and attention it needs.\n");
 
 
             } else if (numberInput.equals("9")) {
