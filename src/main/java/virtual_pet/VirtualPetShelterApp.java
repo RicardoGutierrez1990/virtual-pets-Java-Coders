@@ -118,7 +118,7 @@ public class VirtualPetShelterApp {
                 switch (petChoice) {
                     case "1": {
                         pets.add(new OrganicDog(newPetName, newPetStory));
-                        System.out.println("\nHi my name is " + newPetName + " I'm an Organic Dog and I am happy to be in this new shelter!");
+                        System.out.println("\nHi my name is " + newPetName + " I'm an Organic Dog and I am happy to be in this new shelter! BARK! BARK!");
                         break;
                     }
                     case "2": {
@@ -128,6 +128,8 @@ public class VirtualPetShelterApp {
                     }
                     case "3": {
                         pets.add(new RoboticDog(newPetName, newPetStory));
+                        System.out.println("\nHi my name is " + newPetName + " I'm a Robot Dog. I hate when it rains for it messes with my good looks!");
+
                         break;
                     }
                     case "4": {
