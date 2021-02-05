@@ -1,7 +1,7 @@
 package virtual_pet;
 
 
-public class Organic extends VirtualPet{
+public abstract class Organic extends VirtualPet{
     public Organic(String name, String story) {
         super(name, story);
     }

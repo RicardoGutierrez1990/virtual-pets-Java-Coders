@@ -6,8 +6,8 @@ public class VirtualPetShelterApp {
 
     public static void main(String[] args) {
 
-        System.out.println("\n....It's a cold winter night of February 2021 in Columbus Ohio.\n");
-        System.out.println("You went out for a walk to clear your head from a school project you could not figure out. " +
+        System.out.println("\n....It's a cold winter night of February 2021 in Columbus Ohio.");
+        System.out.println("\nYou went out for a walk to clear your head from a school project you could not figure out. " +
                 "\nAs you are walking down the street you hear a soft bark coming from the bushes covered in snow. Bark! Bark!.. It's a puppy!!" +
                 "\nYou decide to take the dog to the closest shelter, which happens to be open 24/7 and takes Organic and Robotic pets! \n");
         System.out.println("\nWelcome to WE ARE ALL ONE Shelter! Where pets from all types are welcomed.\n");
@@ -111,12 +111,17 @@ public class VirtualPetShelterApp {
 
 
 
-                System.out.println("What kind of pet is it? 1)Organic Dog  2)Organic Cat  3)Robot Dog  4)Robot Cat?");
-                System.out.println("Use the number to select your answer:");
+                System.out.println("What kind of pet is it? " +
+                        "\n1)Organic Dog  " +
+                        "\n2)Organic Cat  " +
+                        "\n3)Robot Dog  " +
+                        "\n4)Robot Cat");
+                System.out.println("\nUse the number to select your answer:");
                 petChoice = input.nextLine();
                 switch (petChoice) {
                     case "1": {
                         pets.add(new OrganicDog(newPetName, newPetStory));
+                        System.out.println("\nHi my name is " + newPetName + " I'm an Organic Dog and I am happy to be in this new shelter!");
                         break;
                     }
                     case "2": {

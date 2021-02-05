@@ -8,4 +8,6 @@ public class RoboticCat extends Robotic {
     public RoboticCat(String name, String story, int hunger, int thirst, int waste, int boredom, int health) {
         super(name, story, hunger, thirst, waste, boredom, health);
     }
+
+
 }

@@ -24,6 +24,8 @@ public abstract class VirtualPet {
         this.waste = waste;
     }
 
+
+
     public String getName() {
 
         return name;

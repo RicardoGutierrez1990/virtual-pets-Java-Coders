@@ -1,6 +1,6 @@
 package virtual_pet;
 
-public class Robotic extends VirtualPet {
+public abstract class Robotic extends VirtualPet {
     public Robotic(String name, String story) {
         super(name, story);
     }
