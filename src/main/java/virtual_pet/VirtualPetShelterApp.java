@@ -118,13 +118,13 @@ public class VirtualPetShelterApp {
                 switch (petChoice) {
                     case "1": {
                         pets.add(new OrganicDog(newPetName, newPetStory));
-                        System.out.println("\nHi my name is " + newPetName + " I'm an Organic Dog and I am happy to be in this new shelter!");
+                        OrganicDog.greeting(newPetName);
                         OrganicDog.makeNoise();
                         break;
                     }
                     case "2": {
                         pets.add(new OrganicCat(newPetName, newPetStory));
-                        System.out.println("\nHi my name is " + newPetName + " I love to chase mice and play with my owners, I'm not your typical cat!");
+                        OrganicCat.greeting(newPetName);
                         OrganicCat.makeNoise();
                         break;
                     }

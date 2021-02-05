@@ -14,5 +14,8 @@ public class OrganicDog extends Organic{
         System.out.println("BARK! BARK!");
     }
 
+    public static void greeting(String newPetName) {
+        System.out.println("\nHi my name is " + newPetName + " I'm an Organic Dog and I am happy to be in this new shelter!");
+    }
 }
 
