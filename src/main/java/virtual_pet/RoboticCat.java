@@ -15,4 +15,9 @@ public class RoboticCat extends Robotic {
 
         System.out.println("ROBO-MEOW! ROBO-MEOW!");
     }
+
+    public static void greeting(String newPetName) {
+         System.out.println("\nHi my name is " + newPetName + ". " + "I'm a Robotic Cat and can't wait to play with you!");
+
+    }
 }
