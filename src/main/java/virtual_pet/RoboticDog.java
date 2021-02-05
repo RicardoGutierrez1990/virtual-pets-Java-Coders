@@ -15,4 +15,7 @@ public class RoboticDog extends Robotic {
     }
 
 
+    public static void greeting(String newPetName) {
+        System.out.println("\nHi my name is " + newPetName + " I'm a Robot Dog. I hate when it rains for it messes with my wiring!");
+    }
 }
