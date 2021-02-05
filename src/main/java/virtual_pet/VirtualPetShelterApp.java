@@ -134,6 +134,7 @@ public class VirtualPetShelterApp {
                     }
                     case "4": {
                         pets.add(new RoboticCat(newPetName, newPetStory));
+                        System.out.println("\nHi my name is " + newPetName + ". " + "I'm a Robotic Cat and can't wait to play with you!");
                         break;
                     }
                     default: {
